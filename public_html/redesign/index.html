@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,600;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="icon" href="../img/favicon-32x32.png">
+  <title>luenne neri ☕️</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li id="back">
+        <a href="../index.html">👈🏿</a>
+      </li>
+      <li>
+        <a href="#coffee" class="tooltip">☕️<span class="tooltiptext">say hello!</span></a>
+      </li>
+    </ul>
+  </nav>
+  <div id="logo">
+    <a href="#start"><img src="https://cdn.glitch.com/008a5595-16c6-4573-8d27-78145f72c147%2Flogo.png?v=1587507156130" width="64px" alt="logo"></a>
+  </div>
+
+  <div class="main" id="start">
+    <div class="border">
+      <div id="left"></div>
+      <div id="right"></div>
+      <div id="top"></div>
+      <div id="bottom"></div>
+    </div>
+
+
+    <div class="content">
+      <div class="proj-card-1">
+        <h4>
+          Product Design
+        </h4>
+        <h2>
+          Zap Imóveis Redesign
+        </h2>
+        <p id="desc-1" data-aos="fade-in">
+          After the merger of VivaReal and Zap Imóveis – the two leading real estate tech companies in South America – the company had to cope with the integration of two distinctive tech teams.
+          <br><br>
+          As the engineering teams made the integration of the systems, the design team saw the opportunity to rethink the strategy under one of the portals' design, which had problems in accessibility, duplicate code, and no logic behind the use of
+          its typography, colors, and components throughout the portal.
+        </p>
+      </div>
+
+
+    </div>
+
+    <div class="images">
+      <img src="https://cdn.glitch.com/008a5595-16c6-4573-8d27-78145f72c147%2Fredesign-hero.png?v=1588645812967" id="hero" data-aos="fade-up">
+      <img src="../img/redesign-biz-2.jpg" class="project-imgs" id="firstimg">
+      <img src="../img/redesign-user.jpg" class="project-imgs" id="secondimg">
+      <img src="../img/redesign-library.jpeg" id="lina">
+      <img src="../img/redesign-final-ldp-1.png" class="project-imgs" id="ldp">
+      <img src="../img/redesign-rp.png" class="project-imgs">
+      <img src="../img/redesign-rp-final.png" id="rpimg" class="project-imgs">
+
+    </div>
+
+
+  </div>
+  <div id="coffee">
+    <div class="contact">
+      <h2>
+        say hello!
+      </h2>
+      <p class="coffee">
+        want to grab a digital coffee? <br>talk more about this project? <br>tell me all about the latest conspiracy theories?<br><br>
+        just say hello 👉🏿 <span class="email">
+          <a href="mailto: opa@luenne.design">opa@luenne.design</a>
+        </span>
+
+      </p>
+
+
+
+      <div class="social">
+
+        <div id="medium">
+          <a href="https://medium.com/@luenne.neri"><img src="https://cdn.glitch.com/008a5595-16c6-4573-8d27-78145f72c147%2Fmedium.png?v=1588109831591"></a>
+        </div>
+        <div id="twitter">
+
+          <a href="https://medium.com/@luenne.neri"><img src="https://cdn.glitch.com/008a5595-16c6-4573-8d27-78145f72c147%2Ftwitter.png?v=1588109831547"></a>
+        </div>
+        <div id="linkedin">
+
+          <a href="https://medium.com/@luenne.neri"><img src="https://cdn.glitch.com/008a5595-16c6-4573-8d27-78145f72c147%2Flinkedin.png?v=1588109831683"></a>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+  <script>
+    window.onscroll = function() {
+      myFunction()
+    };
+
+    function myFunction() {
+      if (document.body.scrollTop > 450 || document.documentElement.scrollTop < 450) {
+        document.getElementById("desc-1").innerHTML =
+          "After the merger of VivaReal and Zap Imóveis – the two leading real estate tech companies in South America – the company had to cope with the integration of two distinctive tech teams. <br /> <br />As the engineering teams made the integration of the systems, the design team saw the opportunity to rethink the strategy under one of the portals' design, which had problems in accessibility, duplicate code, and no logic behind the use of its typography, colors, and components throughout the portal.";
+      } else if (document.body.scrollTop > 1550 || document.documentElement.scrollTop < 1550) {
+        document.getElementById("desc-1").innerHTML =
+        "At first, we chose to work with the page that we considered to be the most controversial –the listing detail page–, as it incorporated components that reflected both business and user interests. <br /><br />As the design team, we resorted to prior user interviews and research to prioritize the user's main objectives in that page. And we also set meetings with the commercial team to investigate what the main business goals were.";
+      } else if (document.body.scrollTop > 3050 || document.documentElement.scrollTop < 3050) {
+        document.getElementById("desc-1").innerHTML = "In our design meetings, we had a frequent discussion about whether we wanted to test a more mid-fi approach (that would allow us to test the structure faster). Or a more refined one (that would mean we'd take more time to start testing, but also meant a lot less rework requirement for the front-end engineers). <br><br> That's when we decided to unite forces and start building our own design system on the side.";
+      } else if (document.body.scrollTop > 4050 || document.documentElement.scrollTop < 4050) {
+        document.getElementById("desc-1").innerHTML = "It started alongside the construction of the listing detail page, having as our focus three different territories, which we called: life ahead, open market, and comfort. And each of those was assigned visual competences, such as movement, solidity, and accessibility.";
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>

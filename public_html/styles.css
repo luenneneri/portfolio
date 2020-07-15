@@ -1,0 +1,454 @@
+:root {
+  --blue: #00D2C4;
+  --yellow: #E9C200;
+  --dark: #222;
+  --pink: #CE0067;
+  --green: #D2D200;
+  --purple: #4800FF;
+}
+
+
+@font-face {
+  font-family: 'ObjectSans';
+  src: url(font/ObjectSans-Regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'ObjectSans';
+  src: url(font/ObjectSans-Thin 2.otf);
+  font-weight: 200;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FAFAFA;
+  font-family: 'ObjectSans', sans-serif;
+  line-height: 1.5;
+}
+
+p {
+  line-height: 1.8;
+}
+
+a {
+  color: black;
+}
+
+a:hover {}
+
+.main {
+  max-width: 1024px;
+  margin: 40px auto;
+}
+
+#top, #bottom, #left, #right {
+  background-color: var(--green);
+  position: fixed;
+  z-index: 100;
+  transition: all 800ms ease-out;
+}
+
+#left, #right{
+  top: 0;
+  bottom: 0;
+  width: 16px;
+}
+
+#top, #bottom{
+  left: 0;
+  right: 0;
+  height: 16px;
+}
+
+#left {
+  left: 0;
+}
+
+#right {
+  right: 0;
+}
+
+#top {
+  top: 0;
+}
+
+#bottom {
+  bottom: 0;
+}
+
+nav ul li {
+  position: fixed;
+  right: 60px;
+  top: 40px;
+  margin-left: 80px;
+  font-size: 48px;
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+}
+
+#back {
+  position: fixed;
+  left: 60px;
+  top: 40px;
+  margin-left: 0px;
+  font-size: 48px;
+  list-style: none;
+}
+
+.hero {
+  margin-top: 280px;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 1;
+}
+
+h3 {
+  font-weight: 200;
+  max-width: 760px;
+  font-size: 24px;
+}
+
+.hero h3 {
+  margin-top: -16px;
+}
+
+h4 {
+  font-weight: 200;
+  text-transform: uppercase;
+  line-height: 0;
+}
+
+.content {
+  margin-top: 380px;
+}
+
+.card h2 {
+  transition: .2s;
+  line-height: 1;
+}
+
+.cover a {
+  transition: .2s;
+}
+
+.cover a:hover {
+  cursor: e-resize;
+  transition: .2s;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip a:hover {}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--green);
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 10%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 55%;
+  margin-left: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+#coffee {
+  background-color: var(--green);
+  height: 100vh;
+  position: relative;
+
+  transition: all 800ms ease-out;
+}
+
+.coffee {
+  font-size: 18px;
+}
+
+.email a {
+  letter-spacing: 0px;
+}
+#coffee a {
+  color: inherit;
+}
+
+#coffee a:hover {
+  letter-spacing: 0px;
+  filter: blur(1px);
+  transition: .4s;
+}
+
+.contact {
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  top: 30vh;
+}
+
+#coffee h2 {
+  font-size: 48px;
+  margin: 0 auto;
+}
+
+.social {
+  position: relative;
+  top: 160px;
+  font-size: 18px;
+}
+
+.card {
+  width: 100%;
+  margin-top: 160px;
+}
+
+.card .description {
+  max-width: 400px;
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -5%);
+  padding: 0px 20px;
+}
+
+.card .cover {
+  display: inline-block;
+}
+
+.card img {
+  padding-left: 0px;
+  max-width: 560px;
+}
+
+.proj-card-1 {
+  max-width: 360px;
+  background-color: white;
+  padding: 32px 48px;
+  position: fixed;
+  top: 210px;
+  left: 320px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05);
+}
+
+.images {
+  position: relative;
+  top: 100px;
+}
+
+.proj-card-2 {}
+
+#desc-1 {}
+
+#desc2 {}
+
+#hero {
+  max-width: 1000px;
+  margin-top: -520px;
+  margin-left: 200px;
+  z-index: 300;
+}
+
+.project-imgs {
+  max-width: 700px;
+  position: relative;
+  left: 420px;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 96px;
+  border-radius: 4px;
+}
+
+#firstimg {
+  max-width: 900px;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: -190;
+  position: relative;
+  left: 280px;
+}
+
+#secondimg {
+  max-width: 1400px;
+  position: relative;
+  left: -180px;
+  top: -400px;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: -200;
+}
+
+#tablet {
+  max-width: 480px;
+  position: relative;
+  left: 290px;
+  top: -1300px;
+  z-index: -200;
+}
+
+#rpimg {
+  position: relative;
+  left: 80px;
+  top: -500px;
+  z-index: -300;
+  max-width: 900px;
+}
+
+#ldp {
+  position: relative;
+  left: 320px;
+  top: -300px;
+  z-index: -100;
+}
+
+#lina {
+  position: relative;
+  top: -320px;
+  left: 0px;
+  margin-bottom: 280px;
+  max-width: 1200px;
+  z-index: -100;
+}
+
+.social a {
+  transition: .4s;
+  filter: blur(0px);
+}
+
+.social a:hover {
+  filter: blur(1px);
+}
+
+/* RESPONSIVE */
+/* Fairly small screens including iphones */
+@media only screen and (max-width: 1200px) {
+  #left, #right {
+    top: 0;
+    bottom: 0;
+    width: 12px;
+  }
+
+  #left {
+    left: 0;
+  }
+
+  #right {
+    right: 0;
+  }
+
+  #top, #bottom {
+    left: 0;
+    right: 0;
+    height: 12px;
+  }
+
+  #top {
+    top: 0;
+  }
+
+  #bottom {
+    bottom: 0;
+  }
+
+  @media only screen and (max-width: 800px) {
+    #left, #right {
+      top: 0;
+      bottom: 0;
+      width: 8px;
+    }
+
+    #left {
+      left: 0;
+    }
+
+    #right {
+      right: 0;
+    }
+
+    #top, #bottom {
+      left: 0;
+      right: 0;
+      height: 8px;
+    }
+
+    #top {
+      top: 0;
+    }
+
+    #bottom {
+      bottom: 0;
+    }
+
+    body {}
+
+    .content {
+      margin: 0 60px;
+    }
+
+    .hero {
+      margin: 0 60px;
+      margin-top: 160px;
+    }
+
+    h1 {
+      font-size: 64px;
+      line-height: 1;
+    }
+
+    .card h2 {
+      line-height: 1;
+    }
+
+    h3 {
+      font-weight: 200;
+      max-width: 760px;
+      font-size: 18px;
+    }
+
+    h4 {
+      font-weight: 200;
+      text-transform: uppercase;
+      line-height: 0;
+    }
+
+    .card img {
+      padding-left: 0px;
+      max-width: 360px;
+    }
+
+    #coffee {
+      width: 100%;
+    }
+
+    #coffee .contact {
+      margin: 0 32px;
+    }
+  }
