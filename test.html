@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173896415-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-173896415-1');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--ICON & TITLE-->
+  <link rel="icon" href="img/favicon-32x32.png">
+  <title>luenne neri ☕️</title>
+
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="test.css">
+
+  <!-- SLICK -->
+
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+</head>
+
+<body onload="setColor()">
+
+  <!--MAIN NAVIGATION-->
+  <nav>
+    <ul>
+      <li id="listItem">
+        <a href="#coffee"><span id="hello">☕️</span></a>
+      </li>
+    </ul>
+  </nav>
+
+  <!--BORDER-->
+  <div class="border">
+    <div id="left" class=""></div>
+    <div id="right" class=""></div>
+    <div id="top" class=""></div>
+    <div id="bottom" class=""></div>
+  </div>
+
+  <!---->
+
+  <!--PROJECT TEST:-->
+  <div class="content">
+    <div class="project">
+      <div class="caption">
+        <h3 class="subtitle">hey, if you landed in this page, can you help with this carousel?</h3>
+      </div>
+      <div class="cover" id="nine">
+        <div class="singleslide"><img class="slideimg" src="img/desktop-gather.png" alt="gather"></div>
+        <div class="singleslide"><img class="slideimg" src="img/desktop-gatherdata.png" alt="gather data"></div>
+        <div class="singleslide"><img class="slideimg" src="img/desktop-hourglass.png" alt="hourglass"></div>
+      </div>
+
+      </div>
+  </div>
+
+  <!---->
+
+
+
+
+
+  <!-- SCRIPTS -->
+  <script type="text/javascript" src="main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+<!-- <script type="text/javascript" src="script.js"></script> -->
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("readmore");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "read more ↓";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "read less ↑";
+        moreText.style.display = "inline";
+      }
+    }
+  </script>
+
+
+  <script>
+
+
+    $(document).ready(function() {
+      $('.cover').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        centerMode: true
+      });
+
+      $('.cover').find(".slick-slide").on("click", function(){
+       $('.cover').slick("slickNext");
+    });
+    });
+
+
+  </script>
+</body>
+
+</html>

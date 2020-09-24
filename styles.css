@@ -1,0 +1,654 @@
+:root {
+  --main-color: #A9DBB8;
+}
+
+@font-face {
+  font-family: 'ObjectSans';
+  src: url(font/ObjectSans-Thin.otf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'ObjectSans';
+  src: url(font/ObjectSans-Regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'ObjectSans';
+  src: url(font/ObjectSans-Bold.otf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'ObjectSans';
+  src: url(font/ObjectSans-Heavy.otf);
+  font-weight: 900;
+}
+
+
+
+
+@font-face {
+  font-family: 'Pangram';
+  src:url(font/Pangram-Regular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Pangram';
+  src:url(font/Pangram-Bold.otf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'Pangram';
+  src:url(font/Pangram-ExtraLight.otf);
+  font-weight: 200;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Pangram';
+}
+
+/* TEXT */
+h1 {
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 80px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+#hello-bio{
+  font-size: 28px;
+  line-height: 40px;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0;
+  font-weight: 400;
+}
+
+li {
+  display: block;
+  padding-right: 8px;
+  font-weight: 400;
+}
+
+a {
+  padding: 0px 1px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--main-color);
+  text-decoration: none;
+  color: #000;
+  transition: 0.1s ease-in-out;
+}
+
+a:hover {
+  color: #000;
+  background-color: var(--main-color);
+  padding: 0px 1px 1px 1px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--main-color);
+  /* cursor: ne-resize; */
+}
+
+.assets li {
+  padding-bottom: 8px;
+}
+
+#listItem a {
+  padding-top: 32px;
+  padding-right: 24px;
+}
+
+#listItem a:hover {
+  color: #000;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: none;
+}
+
+#readmore, #readmore-gather, #readmore-hourglass, #readmore-cms{
+border-bottom-width: 2px;
+border-bottom-style: solid;
+border-bottom-color: var(--main-color);
+text-decoration: none;
+cursor: pointer;
+float: right;
+}
+
+
+/* LAYOUT */
+
+
+nav li a {
+  text-decoration: none;
+  border-bottom: 0px solid #000;
+  font-size: 40px;
+  z-index: 10;
+
+    position: fixed;
+    display: inline-block;
+    right: 24px;
+    top: 12px;
+    transition: .6s ease-in-out;
+}
+
+.tooltip .tooltiptext {
+  opacity: 0;
+}
+
+.intro, .content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.intro {
+  margin-top: 0px;
+}
+
+.intro .social {
+  margin-top: 0px;
+  margin-bottom: 72px;
+}
+
+.content{
+  margin-top: 96px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 48px;
+}
+
+.caption {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.title {
+  margin-bottom: 0px;
+}
+
+.subtitle {
+  margin-top: 0px;
+}
+
+
+.description {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 8px;
+}
+
+.description ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.description .assets{
+  margin-top: 24px;
+}
+.description p, .description ul{
+  margin-top: 8px;
+}
+
+
+.cover {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.singleslide{
+
+}
+
+.slideimg{
+  object-fit: cover;
+  height: 270px;
+}
+
+
+
+/* IMAGE URLS */
+/* #one {
+}
+
+#two {
+  background-image: url("img/mobile-lina.png");
+}
+
+#three {
+  background-image: url("img/mobile-hourglass.png");
+}
+
+#four {
+  background-image: url("img/mobile-cms.png");
+  background-clip: border-box;
+  background-position: center right;
+}
+
+#five {
+  background-image: url("img/mobile-gather.png");
+}
+
+#six {
+  background-image: url("img/mobile-gather-data.png");
+}
+
+#seven {
+  background-image: url("img/mobile-verdea.png");
+}
+
+#eight {
+  background-image: url("img/mobile-presente.png");
+} */
+
+#top, #bottom, #left, #right {
+  background-color:  var(--main-color);
+  position: fixed;
+  z-index: 100;
+}
+
+#left, #right {
+  top: 0;
+  bottom: 0;
+  width: 8px;
+}
+
+#top, #bottom {
+  left: 0;
+  right: 0;
+  height: 8px;
+}
+
+#left {
+  left: 0;
+}
+
+#right {
+  right: 0;
+}
+
+#top {
+  top: 0;
+}
+
+#bottom {
+  bottom: 0;
+}
+
+#coffee {
+  background-color:  var(--main-color);
+  color: #222;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 20;
+}
+
+#coffee a {
+  color: #222;
+  border-bottom: 1px solid #222;
+}
+
+#coffee a:hover {
+  color:  var(--main-color);
+  background-color: #222;
+  border-bottom: 1px solid #222;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 62px 24px 0 24px;
+}
+
+#social {
+  margin: 0 24px;
+  position: absolute;
+  bottom: 32px;
+}
+
+@media only screen and (min-width: 500px) {
+  .cover {  }
+  .slideimg{
+    object-fit: auto;
+    height: 320px;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  nav li a {
+      right: 12px;
+      top: 0px;
+      transition: .6s ease-in-out;
+  }
+  .intro {
+    min-height: 50vh;
+    position: relative;
+    max-width: 560px;
+  }
+
+  .bio{
+    margin-top: 0;
+  }
+
+  .intro .social {
+    position: relative;
+  }
+
+  /* Tooltip container */
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    opacity: 0;
+    width: auto;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 8px 12px 8px 12px;
+    border-radius: 4px;
+
+    /* Position the tooltip text - see examples below! */
+    position: fixed;
+    right: 40px;
+    top: 80px;
+    z-index: 1;
+  }
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    opacity: 1;
+    transition: .6s ease-in-out;
+  }
+
+  .about {
+    position: relative;
+    top: 20vh;
+    max-width: 380px;
+  }
+
+  .about h1 {
+    margin-bottom: 0;
+  }
+  h2 {
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+  .about p {
+    margin-top: 24px;
+  }
+
+  .content {
+    position: relative;
+    top: 0px;
+    margin-top: 0px;
+  }
+
+  .project {
+    opacity: 0;
+    margin-bottom: 96px;
+  }
+
+  .slideimg{
+    object-fit: cover;
+    height: auto;
+  }
+
+  #coffee {
+    font-weight: 400;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  #intro {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .intro {
+    margin: 24px 48px;
+    justify-content: space-between;
+  }
+
+  .bio {
+    width: 100%;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0;
+  }
+
+  .social {
+    font-size: 14px;
+    margin-top: 24px;
+  }
+
+  .project1{
+    margin-bottom: 96px;
+  }
+
+  .content {
+    margin: 48px 48px;
+  }
+
+  .caption {
+    flex-direction: column;
+    padding-bottom: 16px;
+    justify-content: flex-start;
+    flex-basis: 24px;
+    padding-right: 24px;
+  }
+
+  .title {
+    padding: 0;
+    margin: 0;
+    line-height: 24px;
+  }
+
+  .subtitle {
+    padding: 0;
+    margin: 0;
+    line-height: 24px;
+  }
+
+  h3.subtitle {
+    padding-top: 8px;
+  }
+
+  h5.strong {}
+
+  .description {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .description .assets{
+    margin-top: 0;
+  }
+
+  .assets {
+    min-width: 300px;
+  }
+
+  .assets li {
+    padding-bottom: 8px;
+  }
+
+  .about {
+    margin: 0 48px;
+  }
+
+  #social {
+    margin: 0 48px;
+    max-width: 600px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #left, #right {
+    top: 0;
+    bottom: 0;
+    width: 12px;
+  }
+
+  #top, #bottom {
+    left: 0;
+    right: 0;
+    height: 12px;
+  }
+
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 48px;
+  }
+
+  .content {
+    margin-top: 0px;
+  }
+
+  .intro h4 {
+  }
+
+  .bio {
+  }
+
+
+
+  .project {
+    margin-top: 48px;
+  }
+
+    #social {
+      margin: 0 48px;
+      max-width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 1280px) {
+  nav li a{
+    right: 24px;
+  }
+  #left, #right {
+    top: 0;
+    bottom: 0;
+    width: 16px;
+  }
+
+  #top, #bottom {
+    left: 0;
+    right: 0;
+    height: 16px;
+  }
+  .content {
+    margin: 0 120px;
+  }
+  .intro{
+    margin: 120px 120px;
+  }
+  #coffee .about{
+    margin: 0 120px;
+  }
+  #coffee #social{
+    margin: 0 120px;
+    max-width: 100%;
+  }
+
+  .description{
+    width: 960px;
+    margin: 0 auto;
+  }
+
+
+  .assets {
+    min-width: 320px
+  }
+
+  .overview {
+    max-width: 100%;
+  }
+
+  @media only screen and (min-width: 1480px) {
+    #intro{
+      height: 50vh;
+    }
+    .content {
+      margin: 0 240px;
+    }
+    .intro{
+      margin: 120px 240px;
+    }
+    #coffee .about{
+      margin: 0 240px;
+    }
+    #coffee #social{
+      margin: 0 240px;
+    }
+
+    @media only screen and (min-width: 2100px) {
+      .content {
+        max-width: 1240px;
+      }
+      .intro{
+        max-width: 1240px;
+      }
+      #intro{
+        height: 30vh;
+      }
+      #coffee .about{
+        max-width: 1240px;
+      }
+      #coffee #social{
+        max-width: 1240px;
+      }
+      nav li a {
+        position: fixed;
+        left: 64px;
+        top: 24px;
+        text-decoration: none;
+        border-bottom: 0px solid #000;
+        font-size: 44px;
+        z-index: 10;
+      }
